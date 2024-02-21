@@ -1,4 +1,4 @@
-##Vanguard Data Source
+# Vanguard Data Source
 
 This data is the merging data pulled from WRDS from the CRSP Monthly TNA Ret NAV table and merged with CRSP monthly stock data and mutual fund manager information (from CRSP Fund Summary 2). 
 
