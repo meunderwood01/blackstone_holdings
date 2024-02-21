@@ -1,0 +1,27 @@
+##First be in the folder that has the data and open the command window
+##Then clone your GIT hub repository: 
+git clone https://github.com/meunderwood01/blackstone_holdings
+
+##Initialize Large File Storage (LFS) -- note you do have to download this ahead of time: https://git-lfs.com/
+
+git lfs install
+
+##track the correct file type--example is pkl
+
+git lfs track "*.pkl"
+##If you've done this correct you should now see a git attributes file in the folder
+
+##push to the remote repository 
+git lfs push --all origin main
+
+##Adds the changes in the current directory to staging area
+git add. 
+
+##creates a commit with a commment on what changes have been made
+gitt commit -m "insert comment"
+
+##pushes to the remote repository 
+git push -u origin main
+
+##If you do all these steps correctly then you should see the data folder loaded in your online repository 
+##Helpful video on the steps: https://www.youtube.com/watch?v=9HCsSD5PMSk (Title: GitHub upload large files | Push your large file to github | git lfs | GeoDev)
