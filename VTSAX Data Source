@@ -1,0 +1,13 @@
+# Vanguard Data Source
+
+This data is the merging data pulled from WRDS from the CRSP Monthly TNA Ret NAV table and merged with CRSP monthly stock data and mutual fund manager information (from CRSP Fund Summary 2). 
+
+There are multiple variables that are created:
+  - flows which are derived from the difference between mtna and mtna lagged one period
+  - "f" which is Flow / MTNA_1 (lagged 1 period)
+  - Sharpe Ratio
+  - Alpha
+  - mret and f lagged by various periods denoted by "l #" where the # denotes the number of months lagged
+
+This data is then restricted to only be the data that is related to VTSAX (fund number 031462)
+
